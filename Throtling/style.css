@@ -1,0 +1,120 @@
+@font-face {
+    font-family: comm;
+    src: url(./CommutersSans-Heavy.a3ab1120.woff2);
+}
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    position: relative;
+}
+#page1{
+    width: 100%;
+    height: 100vh;
+    background-color: #F5F2EE;
+    padding: 2vw;
+    position: relative;
+    overflow: hidden;
+}
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#bottom-nav{
+    width: calc(100% - 4vw);
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 3vw;
+    /* background-color: red; */
+}
+
+#nav h3{
+    font-family: comm;
+    letter-spacing: -1px;
+    font-weight: 00;
+}
+.ham{
+    width: 20px;
+    height: 20px;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.imagediv{
+    width: 14vw;
+    height: 14vw;
+    position: absolute;
+    background-color:#F5F2EE;
+    padding: 50px;
+    border: 2px solid black;
+    transition: all ease 0.4s;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    border-radius: 4px;
+}
+
+.imagediv img{
+    width: 100%;
+    height: 100%;
+}
+#bottom-nav .ham:nth-last-child(2){
+    /* background-color: green; */
+    border: none;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+
+}
+#bottom-nav .ham:nth-last-child(1){
+    /* background-color: red; */
+    border: none;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+}
+#page1 h1{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5vw;
+    text-align: center;
+    font-family: comm;
+    line-height: 4.5vw;
+}
+#page2{
+    width: 100%;
+    background-color: #F5F2EE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5vw 0vw;
+    border-bottom: 2px solid black;
+
+}
+#page2 h1{
+    text-align: center;
+    font-family: comm;
+    line-height: 2vw;
+    margin-bottom: 3vw;
+    /* border-bottom: 
+    border-bottom: 2px solid black;
+    2px solid black; */
+
+}
+#page3{
+    width: 100%;
+    height: 100vh;
+    background-color: #F5F2EE;
+    padding: 2vw 4vw;
+
+}
